@@ -1,7 +1,7 @@
 n=int(input())
-for i in range(1,n*2):
-    if i<=n:
-        print(i,end=" ")
-    else:
-        n=n-1
-        print(n,end=" ")
+rev=0
+while n!=0:
+    r=n%10
+    rev=rev*10+r
+    n=n//10
+print(rev)
