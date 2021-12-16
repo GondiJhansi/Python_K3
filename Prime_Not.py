@@ -1,15 +1,10 @@
-from math import*
-def isprime(num):
-    if num==1:
-        return False
-    sq=int(sqrt(num))
-    for i in range(2,sq+1):
-        if num%i==0:
-            return False
-    return True
-num=int(input())
-#print(isprime(num))
-if isprime(num):
+n=int(input())
+Factor_Count=0
+for i in range(1,n+1):
+    if n%i==0:
+        Factor_Count+=1
+if(Factor_Count==2):
     print("Prime")
 else:
     print("Not Prime")
+    
